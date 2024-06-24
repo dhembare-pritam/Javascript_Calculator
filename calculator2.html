@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>calculator</title>
+  
+  <style>
+    .container{
+      width: 220px;
+      height: 400px;
+      border: 1px solid;
+    }
+    .container input{
+         margin: 10px;
+         height: 25px;
+         width: 190px;
+    }
+    .content {
+      display: flex;
+      justify-content:center;
+      flex-wrap: wrap;
+   }
+    .content button{
+       width: 50px;
+       height: 50px;
+       margin: 4px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <input type="text" id="txt" readonly>
+    <div class="content">
+      <button onclick="result= ''; document.getElementById('txt').value=result;">c</button>
+
+      <button onclick="result= result + '1'; document.getElementById('txt').value=result;">1</button>
+
+      <button onclick="result= result + '2'; document.getElementById('txt').value=result;">2</button>
+
+      <button onclick="result= result + '+'; document.getElementById('txt').value=result;">+</button>
+
+      <button onclick="result= result + '3'; document.getElementById('txt').value=result;">3</button>
+
+      <button onclick="result= result + '4'; document.getElementById('txt').value=result;">4</button>
+
+      <button onclick="result= result + '-'; document.getElementById('txt').value=result;">-</button>
+
+      <button onclick="result= result + '5'; document.getElementById('txt').value=result;">5</button>
+
+      <button onclick="result= result + '6'; document.getElementById('txt').value=result;">6</button>
+
+      <button onclick="result= result + '*'; document.getElementById('txt').value=result;">*</button>
+
+      <button onclick="result= result + '7'; document.getElementById('txt').value=result;">7</button>
+
+      <button onclick="result= result + '8'; document.getElementById('txt').value=result;">8</button>
+
+      <button onclick="result= result + '/'; document.getElementById('txt').value=result;">/</button>
+
+      <button onclick="result= eval(result); document.getElementById('txt').value=result;">=</button>
+
+      <button onclick="result= result + '9'; document.getElementById('txt').value=result;">9</button>
+
+      <button onclick="result= result + '0'; document.getElementById('txt').value=result;">0</button>
+
+      <button onclick="result= result + '.'; document.getElementById('txt').value=result;">.</button>
+    </div>
+  </div>
+<script>
+  
+ let result = '';
+ document.getElementById("txt").value = result;
+</script>
+</body>
+</html>
